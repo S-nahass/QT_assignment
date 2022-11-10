@@ -5,7 +5,12 @@
 #include <reg.h>
 #include "sellerwindow.h"
 
-
+struct product {
+    QString name;
+    double price;
+    int quantity;
+    QString category;
+};
 namespace Ui {
 class customerWindow;
 }
@@ -23,6 +28,10 @@ public:
 
 private slots:
     void on_back_clicked();
+
+    void on_pushButton_2_clicked();
+
+    void on_confirm_clicked();
 
 private:
     Ui::customerWindow *ui;

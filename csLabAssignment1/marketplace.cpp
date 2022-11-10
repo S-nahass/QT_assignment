@@ -36,8 +36,6 @@ void marketplace::on_sellerP_clicked()
 
 
 
-
-
 }
 
 

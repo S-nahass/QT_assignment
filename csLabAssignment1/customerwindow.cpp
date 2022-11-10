@@ -1,6 +1,6 @@
 #include "customerwindow.h"
 #include "ui_customerwindow.h"
-
+#include <QMessageBox>
 
 
 
@@ -31,5 +31,22 @@ void customerWindow::on_back_clicked()
     registrationWindow->show();
 
 
+}
+
+
+
+
+
+
+
+
+
+
+
+void customerWindow::on_confirm_clicked()
+{
+    QMessageBox msgBox;
+    msgBox.setText("total price is  ");
+    msgBox.exec();
 }
 

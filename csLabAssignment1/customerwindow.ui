@@ -18,7 +18,7 @@
     <rect>
      <x>10</x>
      <y>20</y>
-     <width>361</width>
+     <width>446</width>
      <height>211</height>
     </rect>
    </property>
@@ -34,7 +34,7 @@
      <widget class="QLineEdit" name="lineEdit"/>
     </item>
     <item row="4" column="3">
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="confirm">
       <property name="text">
        <string>Confirm buy</string>
       </property>
