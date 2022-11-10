@@ -2,7 +2,6 @@
 #include "ui_reg.h"
 
 #include "sellerwindow.h"
-#include "customerwindow.h"
 
 
 
@@ -22,71 +21,25 @@ reg::~reg()
 void reg::on_confirmInfo_clicked()
 {
 
+    this->close();
 
+           sellerW= new sellerWindow;
 
-   confirmInfo(0, 1);
-
-
-
-
+           sellerW->show();
 }
 
 
 
-void reg::confirmInfo (int seller, int customer)
- {
-
-
-   if(seller==0){
 
 
 
-       this->close();
 
-         sellerW= new sellerWindow;
-
-         sellerW->show();
-
-         customer =1;
-     }
-
-    else if  (customer==1) {
-
-       this->close();
-
-         customerW= new customerWindow;
-
-         customerW->show();
-
-
-     }
-
- }
-
-
-
-/*void reg::confirmInfo (int seller, int customer)
+void reg::on_pushButton_clicked()
 {
-    if(seller==0){
+    this->close();
 
-        sellerW= new sellerWindow;
+    marketW = new marketplace;
 
-        sellerW->show();
-
-
-    }
-    else if(customer==0) {
-
-        customerW= new customerWindow;
-
-        customerW->show();
-
-    }
-
+    marketW->show();
 }
-
-*/
-
-
-
 

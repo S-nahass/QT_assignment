@@ -1,5 +1,6 @@
 #include "customerwindow.h"
 #include "ui_customerwindow.h"
+#include "sellerwindow.h"
 
 
 
@@ -9,18 +10,29 @@ customerWindow::customerWindow(QWidget *parent) :
     ui(new Ui::customerWindow)
 {
     ui->setupUi(this);
+
+
 }
+
+
 
 customerWindow::~customerWindow()
 {
     delete ui;
 }
 
-void customerWindow::setProductInfo(QString product,QString price, QString quantity,QString category){
+void customerWindow::setProductInfo(QString product){
 
+QString x = product;
 
-    ui->productList->setText(product+" "+price+"$"+"\n quantity:"+quantity+ "(category: "+category+")");
+   ui->productList->setText(x);
+   // ui->productList->setText(product+" "+price+"$"+"\n quantity:"+quantity+ "(category: "+category+")");
 //ui->productList->text()
+
+}
+
+void customerWindow::display(){
+
 
 }
 
@@ -32,4 +44,19 @@ void customerWindow::on_back_clicked()
 
 
 }
+
+
+void customerWindow::on_pushButton_4_clicked() //search product by name || category
+{
+
+    name = ui->nameS->text();
+
+    if (name==ui->productList->text()){
+
+        ui->productList->setText(name);
+
+    }
+
+}
+
 

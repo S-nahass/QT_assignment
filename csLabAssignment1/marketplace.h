@@ -9,6 +9,7 @@ namespace Ui { class marketplace; }
 QT_END_NAMESPACE
 
 class reg;
+class regC;
 
 class marketplace : public QMainWindow
 {
@@ -28,10 +29,9 @@ private slots:
 
 private:
     Ui::marketplace *ui;
-    reg* registrationWindow;
 
-    int seller;
-    int customer;
+    reg* registrationWindow;
+    regC* registrationCustomer;
 
 
 

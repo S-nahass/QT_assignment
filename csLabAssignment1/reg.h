@@ -10,7 +10,7 @@ class reg;
 }
 
 class sellerWindow;
-class customerWindow;
+
 
 class reg : public QDialog
 {
@@ -20,18 +20,22 @@ public:
     explicit reg(QWidget *parent = nullptr);
     ~reg();
 
-     void confirmInfo(int seller, int customer);
+
 
 private slots:
 
 
      void on_confirmInfo_clicked();
 
+     void on_pushButton_clicked();
+
 private:
 
     Ui::reg *ui;
        sellerWindow* sellerW;
-       customerWindow* customerW;
+       marketplace* marketW;
+
+
 
 };
 

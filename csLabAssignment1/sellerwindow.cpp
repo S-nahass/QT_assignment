@@ -18,32 +18,28 @@ sellerWindow::~sellerWindow()
 
 
 
-void sellerWindow::on_back_clicked(int seller )
-{
-
-       seller=0;
-      // registrationWindow->confirmInfo(seller, customer);
-}
-
-
-void sellerWindow::on_back_clicked()
+void sellerWindow::on_back_clicked( )
 {
 
     this->close();
     registrationWindow= new reg(this);
     registrationWindow->show();
-
+    // registrationWindow->confirmInfo(seller, customer);
 }
+
+
+
 
 
 
 void sellerWindow::on_add_clicked()
 {
    product=ui->productInput->text();
-   price=ui->priceInput->text();
+  /* price=ui->priceInput->text();
    quantity=ui->quantityInput->text();
-   category=ui->categoryInput->text();
+   category=ui->categoryInput->text();*/
 
-   customerW->setProductInfo(product,price,quantity,category);
+   customerW->setProductInfo(product);
+
 }
 

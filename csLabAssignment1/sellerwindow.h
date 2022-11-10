@@ -7,9 +7,11 @@
 
 
 
+
 namespace Ui {
 class sellerWindow;
 }
+class customerWindow;
 
 class sellerWindow : public QDialog
 {
@@ -21,6 +23,10 @@ public:
 
     void on_back_clicked(int seller);
 
+    QString product;
+    QString category;
+    QString quantity;
+    QString price;
 
 private slots:
 
@@ -34,15 +40,10 @@ private slots:
 private:
     Ui::sellerWindow *ui;
     reg* registrationWindow;
-           customerWindow* customerW;
+    customerWindow* customerW;
 
-    int seller;
-    int customer;
 
-    QString product;
-    QString category;
-    QString quantity;
-    QString price;
+
 
 };
 

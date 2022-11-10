@@ -1,6 +1,7 @@
 #include "marketplace.h"
 #include "ui_marketplace.h"
 #include "reg.h"
+#include "regc.h"
 
 
 
@@ -28,7 +29,7 @@ void marketplace::on_sellerP_clicked()
 
     registrationWindow = new reg;
 
-       registrationWindow->confirmInfo(seller, customer);
+
 
       registrationWindow->show();
       this->close();
@@ -45,13 +46,11 @@ void marketplace::on_pushButton_clicked()
 {
 
 
-    registrationWindow = new reg;
+    registrationCustomer = new regC;
 
+    registrationCustomer-> show();
 
-    registrationWindow->confirmInfo(seller, customer);
-
-      registrationWindow-> show();
-this->close();
+    this->close();
 
 }
 

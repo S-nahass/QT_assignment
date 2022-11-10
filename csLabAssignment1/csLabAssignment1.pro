@@ -13,18 +13,21 @@ SOURCES += \
     main.cpp \
     marketplace.cpp \
     reg.cpp \
+    regc.cpp \
     sellerwindow.cpp
 
 HEADERS += \
     customerwindow.h \
     marketplace.h \
     reg.h \
+    regc.h \
     sellerwindow.h
 
 FORMS += \
     customerwindow.ui \
     marketplace.ui \
     reg.ui \
+    regc.ui \
     sellerwindow.ui
 
 # Default rules for deployment.
