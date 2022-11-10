@@ -5,6 +5,8 @@
 #include <reg.h>
 
 
+
+
 namespace Ui {
 class sellerWindow;
 }
@@ -39,8 +41,8 @@ private:
 
     QString product;
     QString category;
-    int quantity;
-    double price;
+    QString quantity;
+    QString price;
 
 };
 

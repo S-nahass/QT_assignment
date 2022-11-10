@@ -22,7 +22,7 @@ void marketplace::on_sellerP_clicked()
 {
 
 
-    seller=0;
+
 
 
 
@@ -36,13 +36,14 @@ void marketplace::on_sellerP_clicked()
 
 
 
+
+
 }
 
 
 void marketplace::on_pushButton_clicked()
 {
 
-    customer=0;
 
     registrationWindow = new reg;
 

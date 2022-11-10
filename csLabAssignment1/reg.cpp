@@ -23,9 +23,9 @@ void reg::on_confirmInfo_clicked()
 {
 
 
-    this->close();
 
-  void confirmInfo(int seller, int customer);
+   confirmInfo(0, 1);
+
 
 
 
@@ -41,13 +41,18 @@ void reg::confirmInfo (int seller, int customer)
 
 
 
+       this->close();
+
          sellerW= new sellerWindow;
 
          sellerW->show();
 
+         customer =1;
      }
 
-    else if (customer==0) {
+    else if  (customer==1) {
+
+       this->close();
 
          customerW= new customerWindow;
 
