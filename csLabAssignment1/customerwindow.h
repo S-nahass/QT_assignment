@@ -21,18 +21,23 @@ public:
 
 
     void display();
-    void setProductInfo(QString product);
+    void setProductInfo(QString product,QString price, QString quantity,QString category);
   //  void setProductInfo(QString product,QString price, QString quantity,QString category);
 
 
 
     QString name;
+    QString addName;
 private slots:
 
     void on_back_clicked();
 
     void on_pushButton_4_clicked();
 
+
+    void on_pushButton_clicked();
+
+    void on_pushButton_2_clicked();
 
 private:
     Ui::customerWindow *ui;
