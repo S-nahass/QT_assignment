@@ -35,11 +35,11 @@ void sellerWindow::on_back_clicked( )
 void sellerWindow::on_add_clicked()
 {
    product=ui->productInput->text();
-  /* price=ui->priceInput->text();
+   price=ui->priceInput->text();
    quantity=ui->quantityInput->text();
-   category=ui->categoryInput->text();*/
+   category=ui->categoryInput->text();
 
-   customerW->setProductInfo(product);
+   customerW->setProductInfo(product, price,quantity,category);
 
 }
 
